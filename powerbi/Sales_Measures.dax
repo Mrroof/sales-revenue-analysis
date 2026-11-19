@@ -1,0 +1,32 @@
+-- Create a table named Sales by loading the Power Query script.
+Total Revenue = SUM(Sales[revenue_ghs])
+
+Total Cost = SUM(Sales[cost_ghs])
+
+Gross Profit = SUM(Sales[gross_profit_ghs])
+
+Gross Margin % = DIVIDE([Gross Profit], [Total Revenue])
+
+Units Sold = SUM(Sales[units_sold])
+
+Orders = DISTINCTCOUNT(Sales[order_id])
+
+Average Order Value = DIVIDE([Total Revenue], [Orders])
+
+Average Discount % = AVERAGE(Sales[discount_rate])
+
+-- Optional calculated date table. Mark this table as the model's Date table.
+Calendar =
+ADDCOLUMNS(
+    CALENDAR(MIN(Sales[order_date]), MAX(Sales[order_date])),
+    "Year", YEAR([Date]),
+    "Month Number", MONTH([Date]),
+    "Month", FORMAT([Date], "MMM"),
+    "Year Month", FORMAT([Date], "YYYY-MM"),
+    "Month Start", DATE(YEAR([Date]), MONTH([Date]), 1)
+)
+
+-- Create this relationship:
+-- Calendar[Date] (one) -> Sales[order_date] (many)
+-- Sort Calendar[Month] by Calendar[Month Number].
+-- Sort Calendar[Year Month] by Calendar[Month Start].
