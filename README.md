@@ -1,3 +1,5 @@
+[![Portfolio validation](https://github.com/Mrroof/sales-revenue-analysis/actions/workflows/portfolio-validation.yml/badge.svg)](https://github.com/Mrroof/sales-revenue-analysis/actions)
+
 # Sales and Revenue Performance Analysis
 
 > **Portfolio case study · Python · pandas · Matplotlib · SQL · Power BI extension**
@@ -17,9 +19,9 @@ This project analyzes synthetic sales transactions to compare revenue and gross 
 - Kumasi generated the highest regional revenue: **GHS 2,159,211.18**.
 - Laptop gross profit in the demo dataset was **GHS 885,400.29**.
 
-<image src="docs/sales-product-revenue.svg" alt="Top product revenue in synthetic sales dataset" />
+![Top product revenue in synthetic sales dataset](docs/sales-product-revenue.svg)
 
-<image src="docs/sales-regional-revenue.svg" alt="Revenue by region in synthetic sales dataset" />
+![Revenue by region in synthetic sales dataset](docs/sales-regional-revenue.svg)
 
 ## Method
 1. Load and validate transaction records.
