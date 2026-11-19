@@ -38,8 +38,8 @@ python src/analyze_sales.py
 
 Outputs are written to `outputs/`.
 
-## Power BI extension
-Import the CSV or exported summary tables and create measures for Total Revenue, Total Cost, Gross Profit, Gross Margin %, and Units Sold. Add month, region and product slicers.
+## Power BI dashboard
+A reproducible Power BI build kit is available in [`powerbi/`](powerbi/): Power Query import script, DAX measures, report layout/validation blueprint and a report theme. Follow [`powerbi/report-blueprint.md`](powerbi/report-blueprint.md) to build the interactive dashboard in Power BI Desktop. The repository contains the source assets and instructions, not a finished `.pbix` file.
 
 ## Limitations
 The transactions are synthetic and do not represent actual company sales. Revenue rankings and trends are illustrative only. A business recommendation would require understanding discounts, returns, customer segments, inventory constraints, acquisition costs and data quality.
