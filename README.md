@@ -58,3 +58,18 @@ requirements.txt                    # Python dependencies
 ## Reproducibility
 
 Run the command above from the repository root. The script regenerates summary outputs locally in `outputs/`; generated outputs are not committed by default. SQL examples are provided separately for readers who want to explore the same business questions in a relational database.
+
+## Business insights
+
+- Total revenue in the synthetic transaction sample is **GHS 8,389,891.74**.
+- **Laptops** are the largest product revenue contributor at **GHS 3,487,963.36**.
+- **Kumasi** is the leading region by revenue at **GHS 2,159,211.18**.
+- Laptop gross profit in the sample is **GHS 885,400.29**. Revenue leadership should therefore be considered alongside gross profit and margin, not in isolation.
+
+## Practical recommendations
+
+1. Review laptop availability, stock-outs and supplier terms, given the product's revenue contribution.
+2. Investigate what is driving Kumasi's result: transaction volume, average selling price, product mix or a small number of large orders.
+3. Compare gross margin by product and region before shifting sales resources or discount budgets.
+4. Track monthly revenue, gross profit, gross margin and units sold together to distinguish growth from discount-led sales.
+5. Validate the patterns against actual returns, discounts, inventory costs and customer segments before making commercial decisions.
