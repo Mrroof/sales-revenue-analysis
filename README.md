@@ -43,3 +43,18 @@ Import the CSV or exported summary tables and create measures for Total Revenue,
 
 ## Limitations
 The transactions are synthetic and do not represent actual company sales. Revenue rankings and trends are illustrative only. A business recommendation would require understanding discounts, returns, customer segments, inventory constraints, acquisition costs and data quality.
+
+## Repository structure
+
+```text
+data/sales_demo.csv                 # Synthetic transaction records
+src/analyze_sales.py                # Data preparation and analysis
+sql/analysis_queries.sql            # Example SQL analysis queries
+docs/                               # Report-ready charts
+requirements.txt                    # Python dependencies
+.github/workflows/                  # Automated repository validation
+```
+
+## Reproducibility
+
+Run the command above from the repository root. The script regenerates summary outputs locally in `outputs/`; generated outputs are not committed by default. SQL examples are provided separately for readers who want to explore the same business questions in a relational database.
